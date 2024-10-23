@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - Farm Help</title>
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body class="bg-green-50">
+  <div class="flex-1 overflow-y-auto pb-16">
+    <header class="bg-green-500 p-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=50&h=50&q=80" alt="User" class="w-10 h-10 rounded-full mr-2">
+        <h1 class="text-white text-xl font-semibold">Farm Help Community</h1>
+      </div>
+    </header>
+
+    <main class="p-4">
+      <div class="bg-white rounded-lg shadow p-4 mb-4">
+        <h2 class="text-xl font-semibold mb-2">Share Your Thoughts</h2>
+        <form id="postForm" class="mb-4">
+          <textarea id="postContent" class="w-full p-2 border border-gray-300 rounded-lg" rows="3" placeholder="What's on your mind?"></textarea>
+          <button type="submit" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Post</button>
+        </form>
+      </div>
+
+      <div id="communityPosts" class="space-y-4">
+        <!-- Sample posts -->
+        <div class="bg-white rounded-lg shadow p-4">
+          <div class="flex items-center mb-2">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=32&h=32&q=80" alt="User" class="w-8 h-8 rounded-full mr-2">
+            <span class="font-semibold">John Doe</span>
+          </div>
+          <p>Has anyone experienced issues with pest control in organic farming? I'm looking for eco-friendly solutions.</p>
+          <div class="mt-2 text-sm text-gray-500">2 hours ago</div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <div class="flex items-center mb-2">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=32&h=32&q=80" alt="User" class="w-8 h-8 rounded-full mr-2">
+            <span class="font-semibold">Jane Smith</span>
+          </div>
+          <p>I've been using a new irrigation system that's really improved my crop yield. Happy to share details if anyone's interested!</p>
+          <div class="mt-2 text-sm text-gray-500">1 day ago</div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="bg-white border-t border-gray-200 fixed bottom-0 w-full">
+      <div class="flex justify-around items-center h-16">
+        <a href="/home.html" class="text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </a>
+        <a href="/community.html" class="text-green-600">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </a>
+        <button class="text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <script>
+    document.getElementById('postForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const content = document.getElementById('postContent').value;
+      if (content.trim()) {
+        const newPost = document.createElement('div');
+        newPost.className = 'bg-white rounded-lg shadow p-4';
+        newPost.innerHTML = `
+          <div class="flex items-center mb-2">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=32&h=32&q=80" alt="User" class="w-8 h-8 rounded-full mr-2">
+            <span class="font-semibold">You</span>
+          </div>
+          <p>${content}</p>
+          <div class="mt-2 text-sm text-gray-500">Just now</div>
+        `;
+        document.getElementById('communityPosts').prepend(newPost);
+        document.getElementById('postContent').value = '';
+      }
+    });
+  </script>
+</body>
+</html>
